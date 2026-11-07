@@ -421,6 +421,39 @@ footer .legal{border-top:1px solid rgba(255,255,255,.15);padding-block:20px calc
 .hours-row b{color:var(--sage);font-size:16px}
 .hours-row span{font-size:15px;color:var(--muted);line-height:1.5}
 .hours-row .hours-tag{align-self:flex-start;margin-top:4px;background:var(--clay);color:#fff;font-size:12.5px;font-weight:700;border-radius:999px;padding:3px 10px}
+
+/* publicações científicas */
+.pubs{background:var(--tint)}
+.pubs-head{display:grid;grid-template-columns:minmax(0,1.6fr) auto;gap:20px 48px;align-items:end;margin-bottom:clamp(24px,3vw,36px)}
+.pubs-head > div:first-child{display:flex;flex-direction:column;gap:10px}
+.pubs-head h2{margin:0}
+.pubs-head p{margin:0;max-width:64ch}
+.pubs-stats{display:flex;gap:12px}
+.pubs-stats span{background:var(--white);border:1px solid var(--line);border-radius:18px;padding:14px 20px;display:flex;flex-direction:column;font-size:13.5px;color:var(--muted);min-width:120px}
+.pubs-stats b{font-family:var(--serif);font-size:36px;line-height:1;color:var(--sage);font-weight:600}
+.pub-list{list-style:none;margin:0;padding:0;display:flex;flex-direction:column;gap:12px}
+.pub{background:var(--white);border:1px solid var(--line);border-radius:18px;padding:18px 22px;display:grid;grid-template-columns:64px minmax(0,1fr);gap:16px;align-items:start}
+.pub-year{font-family:var(--serif);font-size:24px;font-weight:600;color:var(--clay);line-height:1.2}
+.pub-body{display:flex;flex-direction:column;gap:6px;min-width:0}
+.pub-tag{align-self:flex-start;background:var(--mist);color:var(--sage);font-size:12px;font-weight:700;border-radius:999px;padding:3px 10px}
+.pub-title{font-size:16.5px;font-weight:600;color:var(--ink);text-decoration:none;line-height:1.4}
+.pub-title:hover{color:var(--sage);text-decoration:underline}
+.pub-auth{font-size:14px;color:var(--muted)}
+.pub-auth b{color:var(--ink)}
+.pub-src{font-size:13.5px;color:var(--muted);overflow-wrap:anywhere}
+.pub-src a{color:var(--sage);font-weight:600}
+.pub-src svg{vertical-align:-2px}
+.pub-more{margin-top:18px}
+.pub-more summary{cursor:pointer;font-weight:700;color:var(--sage);padding:10px 0;list-style:none;display:flex;align-items:center;gap:8px}
+.pub-more summary::-webkit-details-marker{display:none}
+.pub-more summary::before{content:"+";color:var(--clay);font-size:20px;line-height:1}
+.pub-more[open] summary::before{content:"–"}
+.pub-cap{padding:14px 20px}
+.pub-cap .pub-title{font-size:15.5px}
+.pub-links{display:flex;flex-wrap:wrap;gap:10px;margin:24px 0 0}
+a.filter-link{display:inline-flex;align-items:center;gap:6px;border:1px dashed var(--clay);color:var(--clay);border-radius:999px;padding:8px 16px;font-size:14px;font-weight:600;text-decoration:none}
+a.filter-link:hover{background:var(--white)}
+@media (max-width:760px){.pubs-head{grid-template-columns:1fr}.pub{grid-template-columns:1fr;gap:6px}.pub-year{font-size:20px}}
 </style>
 </head>
 <body>
@@ -470,6 +503,7 @@ footer .legal{border-top:1px solid rgba(255,255,255,.15);padding-block:20px calc
         <button type="button" id="c-vid" data-c="video" aria-pressed="false">Vídeos</button>
         <button type="button" id="c-pod" data-c="podcast" aria-pressed="false">Podcasts</button>
         <button type="button" id="c-med" data-c="media" aria-pressed="false">Nos media</button>
+        <a class="filter-link" href="#publicacoes">Publicações científicas ↓</a>
       </div>
       <div class="content-grid" id="content-grid" aria-live="polite"></div>
       <div class="empty" id="content-empty">
@@ -478,6 +512,39 @@ footer .legal{border-top:1px solid rgba(255,255,255,.15);padding-block:20px calc
         <p class="muted">Em breve vamos publicar aqui artigos e vídeos sobre ansiedade, sono, estudo, parentalidade, postura, respiração e muito mais.</p>
         <a class="btn btn-line" href="equipa.html">Conhecer a equipa</a>
       </div>
+    </div>
+  </section>
+
+  <section class="block pubs" id="publicacoes">
+    <div class="wrap">
+      <div class="pubs-head">
+        <div>
+          <span class="kicker">Investigação</span>
+          <h2>Publicações científicas</h2>
+          <p class="muted">Artigos científicos com revisão por pares do Dr. António Oliveira, psicólogo e investigador em Psicologia Clínica e da Saúde na Universidade da Beira Interior, sobre saúde mental, saúde ocupacional, estigma, diversidade e parentalidade.</p>
+        </div>
+        <div class="pubs-stats"><span><b>7</b>artigos científicos</span><span><b>5</b>capítulos de livro</span></div>
+      </div>
+      <ol class="pub-list">
+          <li class="pub"><span class="pub-year">2026</span><div class="pub-body"><span class="pub-tag">Gestação de substituição</span><a class="pub-title" href="https://doi.org/10.1080/02646838.2026.2708741" target="_blank" rel="noopener" lang="en">Assessing attitudes towards surrogacy: psychometric validation and invariance testing of the ATSS-PT</a><span class="pub-auth"><b>António Oliveira</b>, Henrique Pereira</span><span class="pub-src"><i lang="en">Journal of Reproductive and Infant Psychology</i> · <a href="https://doi.org/10.1080/02646838.2026.2708741" target="_blank" rel="noopener">DOI 10.1080/02646838.2026.2708741 <svg viewBox="0 0 24 24" width="14" height="14" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true"><path d="M14 4h6v6M20 4l-9 9M18 14v5a1 1 0 0 1-1 1H5a1 1 0 0 1-1-1V7a1 1 0 0 1 1-1h5"/></svg></a></span></div></li>
+          <li class="pub"><span class="pub-year">2025</span><div class="pub-body"><span class="pub-tag">Saúde ocupacional</span><a class="pub-title" href="https://doi.org/10.3390/bs15020234" target="_blank" rel="noopener" lang="en">Psychosocial Determinants of Occupational Health Through the Lenses of Gender Identity and Sexual Orientation</a><span class="pub-auth"><b>António Oliveira</b>, Iara Teixeira, Felipe Alckmin-Carvalho, Henrique Pereira</span><span class="pub-src"><i lang="en">Behavioral Sciences</i>, 15(2), 234 · <a href="https://doi.org/10.3390/bs15020234" target="_blank" rel="noopener">DOI 10.3390/bs15020234 <svg viewBox="0 0 24 24" width="14" height="14" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true"><path d="M14 4h6v6M20 4l-9 9M18 14v5a1 1 0 0 1-1 1H5a1 1 0 0 1-1-1V7a1 1 0 0 1 1-1h5"/></svg></a></span></div></li>
+          <li class="pub"><span class="pub-year">2025</span><div class="pub-body"><span class="pub-tag">Saúde mental</span><a class="pub-title" href="https://doi.org/10.3390/healthcare13091030" target="_blank" rel="noopener" lang="en">Perceived Homonegativity and Psychological Distress in Gay Men in Brazil: Does Skin Color Matter?</a><span class="pub-auth">Felipe Alckmin-Carvalho, Renata Della Torre, Iara Teixeira, Jóni Ledo, <b>António Oliveira</b>, Lúcia Nichiata, Henrique Pereira</span><span class="pub-src"><i lang="en">Healthcare</i>, 13(9), 1030 · <a href="https://doi.org/10.3390/healthcare13091030" target="_blank" rel="noopener">DOI 10.3390/healthcare13091030 <svg viewBox="0 0 24 24" width="14" height="14" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true"><path d="M14 4h6v6M20 4l-9 9M18 14v5a1 1 0 0 1-1 1H5a1 1 0 0 1-1-1V7a1 1 0 0 1 1-1h5"/></svg></a></span></div></li>
+          <li class="pub"><span class="pub-year">2025</span><div class="pub-body"><span class="pub-tag">Vulnerabilidade social</span><a class="pub-title" href="https://doi.org/10.1007/s43076-025-00434-2" target="_blank" rel="noopener" lang="en">Social Vulnerability and Poverty: the Impact of Discriminatory Experiences on Positive and Negatives Affect Among Roma and Non-Roma Poorer Communities</a><span class="pub-auth">Jóni Ledo, Patricia Silva, Madalena Cruz, <b>António Oliveira</b>, Henrique Pereira, Catarina Oliveira</span><span class="pub-src"><i lang="en">Trends in Psychology</i> · <a href="https://doi.org/10.1007/s43076-025-00434-2" target="_blank" rel="noopener">DOI 10.1007/s43076-025-00434-2 <svg viewBox="0 0 24 24" width="14" height="14" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true"><path d="M14 4h6v6M20 4l-9 9M18 14v5a1 1 0 0 1-1 1H5a1 1 0 0 1-1-1V7a1 1 0 0 1 1-1h5"/></svg></a></span></div></li>
+          <li class="pub"><span class="pub-year">2024</span><div class="pub-body"><span class="pub-tag">Riscos psicossociais</span><a class="pub-title" href="https://doi.org/10.3390/soc14080136" target="_blank" rel="noopener" lang="en">Occupational Health, Psychosocial Risks and Prevention Factors in Lesbian, Gay, Bisexual, Trans, Queer, Intersex, Asexual, and Other Populations: A Narrative Review</a><span class="pub-auth"><b>António Oliveira</b>, Henrique Pereira, Felipe Alckmin-Carvalho</span><span class="pub-src"><i lang="en">Societies</i>, 14(8), 136 · <a href="https://doi.org/10.3390/soc14080136" target="_blank" rel="noopener">DOI 10.3390/soc14080136 <svg viewBox="0 0 24 24" width="14" height="14" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true"><path d="M14 4h6v6M20 4l-9 9M18 14v5a1 1 0 0 1-1 1H5a1 1 0 0 1-1-1V7a1 1 0 0 1 1-1h5"/></svg></a></span></div></li>
+          <li class="pub"><span class="pub-year">2024</span><div class="pub-body"><span class="pub-tag">Saúde mental</span><a class="pub-title" href="https://doi.org/10.3390/ijerph21091167" target="_blank" rel="noopener" lang="en">Religious Affiliation, Internalized Homonegativity and Depressive Symptoms: Unveiling Mental Health Inequalities among Brazilian Gay Men</a><span class="pub-auth">Felipe Alckmin-Carvalho, <b>António Oliveira</b>, Patricia Silva, Madalena Cruz, Lúcia Nichiata, Henrique Pereira</span><span class="pub-src"><i lang="en">International Journal of Environmental Research and Public Health</i>, 21(9), 1167 · <a href="https://doi.org/10.3390/ijerph21091167" target="_blank" rel="noopener">DOI 10.3390/ijerph21091167 <svg viewBox="0 0 24 24" width="14" height="14" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true"><path d="M14 4h6v6M20 4l-9 9M18 14v5a1 1 0 0 1-1 1H5a1 1 0 0 1-1-1V7a1 1 0 0 1 1-1h5"/></svg></a></span></div></li>
+          <li class="pub"><span class="pub-year">2024</span><div class="pub-body"><span class="pub-tag">Saúde e estigma</span><a class="pub-title" href="https://doi.org/10.3390/ejihpe14060098" target="_blank" rel="noopener" lang="en">Associations between Stigma, Depression, and Adherence to Antiretroviral Therapy in Brazilian Men Who Have Sex with Men Living with HIV</a><span class="pub-auth">Felipe Alckmin-Carvalho, Henrique Pereira, <b>António Oliveira</b>, Lucia Nichiata</span><span class="pub-src"><i lang="en">European Journal of Investigation in Health, Psychology and Education</i>, 14(6), 1489–1500 · <a href="https://doi.org/10.3390/ejihpe14060098" target="_blank" rel="noopener">DOI 10.3390/ejihpe14060098 <svg viewBox="0 0 24 24" width="14" height="14" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true"><path d="M14 4h6v6M20 4l-9 9M18 14v5a1 1 0 0 1-1 1H5a1 1 0 0 1-1-1V7a1 1 0 0 1 1-1h5"/></svg></a></span></div></li>
+      </ol>
+      <details class="pub-more">
+        <summary>Capítulos de livro (5)</summary>
+        <ol class="pub-list">
+          <li class="pub pub-cap"><span class="pub-year">2025</span><div class="pub-body"><a class="pub-title" href="https://doi.org/10.36229/978-65-5866-513-7.cap.04" target="_blank" rel="noopener">Entre o altar e o armário: a influência da religião na construção da identidade e saúde mental de homens gays brasileiros</a><span class="pub-src">In <i>Ciências Humanas e Sociais: Perspectivas Interdisciplinares, vol. 6</i> · <a href="https://doi.org/10.36229/978-65-5866-513-7.cap.04" target="_blank" rel="noopener">DOI <svg viewBox="0 0 24 24" width="14" height="14" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true"><path d="M14 4h6v6M20 4l-9 9M18 14v5a1 1 0 0 1-1 1H5a1 1 0 0 1-1-1V7a1 1 0 0 1 1-1h5"/></svg></a></span></div></li>
+          <li class="pub pub-cap"><span class="pub-year">2025</span><div class="pub-body"><a class="pub-title" href="https://doi.org/10.36229/978-65-5866-513-7.cap.03" target="_blank" rel="noopener">Estigma racial e sexual: um estudo sobre ansiedade, depressão e homonegatividade em homens gays no Brasil</a><span class="pub-src">In <i>Ciências Humanas e Sociais: Perspectivas Interdisciplinares, vol. 6</i> · <a href="https://doi.org/10.36229/978-65-5866-513-7.cap.03" target="_blank" rel="noopener">DOI <svg viewBox="0 0 24 24" width="14" height="14" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true"><path d="M14 4h6v6M20 4l-9 9M18 14v5a1 1 0 0 1-1 1H5a1 1 0 0 1-1-1V7a1 1 0 0 1 1-1h5"/></svg></a></span></div></li>
+          <li class="pub pub-cap"><span class="pub-year">2025</span><div class="pub-body"><a class="pub-title" href="https://doi.org/10.36229/978-65-5866-514-4.cap.07" target="_blank" rel="noopener">No epicentro da crise: como o medo da Covid-19 afetou o sono e a saúde mental de pacientes diagnosticados com insônia em um hospital psiquiátrico brasileiro</a><span class="pub-src">In <i>Ciências da Saúde em Foco, vol. 7</i> · <a href="https://doi.org/10.36229/978-65-5866-514-4.cap.07" target="_blank" rel="noopener">DOI <svg viewBox="0 0 24 24" width="14" height="14" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true"><path d="M14 4h6v6M20 4l-9 9M18 14v5a1 1 0 0 1-1 1H5a1 1 0 0 1-1-1V7a1 1 0 0 1 1-1h5"/></svg></a></span></div></li>
+          <li class="pub pub-cap"><span class="pub-year">2023</span><div class="pub-body"><a class="pub-title" href="https://doi.org/10.55470/editora.978-65-87634-21-0_002" target="_blank" rel="noopener">O ensino de Psicologia da Educação e a prática docente por Vygotsky</a><span class="pub-src">In <i>Educação Contemporânea, Psicologia e Diversidade</i> · <a href="https://doi.org/10.55470/editora.978-65-87634-21-0_002" target="_blank" rel="noopener">DOI <svg viewBox="0 0 24 24" width="14" height="14" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true"><path d="M14 4h6v6M20 4l-9 9M18 14v5a1 1 0 0 1-1 1H5a1 1 0 0 1-1-1V7a1 1 0 0 1 1-1h5"/></svg></a></span></div></li>
+          <li class="pub pub-cap"><span class="pub-year">2023</span><div class="pub-body"><a class="pub-title" href="https://doi.org/10.55470/editora.978-65-87634-20-3.5" target="_blank" rel="noopener">Acessibilidade e inclusão sob a ótica da Psicologia Histórico-Cultural</a><span class="pub-src">In <i>Inclusão em Perspectiva: alfabetização, currículo e acesso à educação</i> · <a href="https://doi.org/10.55470/editora.978-65-87634-20-3.5" target="_blank" rel="noopener">DOI <svg viewBox="0 0 24 24" width="14" height="14" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true"><path d="M14 4h6v6M20 4l-9 9M18 14v5a1 1 0 0 1-1 1H5a1 1 0 0 1-1-1V7a1 1 0 0 1 1-1h5"/></svg></a></span></div></li>
+        </ol>
+      </details>
+      <p class="pub-links"><a class="btn btn-line" href="https://scholar.google.pt/citations?user=FEgZPpYAAAAJ" target="_blank" rel="noopener">Google Académico</a><a class="btn btn-line" href="https://www.researchgate.net/profile/Antonio-Oliveira-122" target="_blank" rel="noopener">ResearchGate</a><a class="btn btn-line" href="https://www.linkedin.com/in/antoniodepaduaj/" target="_blank" rel="noopener">LinkedIn</a></p>
     </div>
   </section>
 </main>
