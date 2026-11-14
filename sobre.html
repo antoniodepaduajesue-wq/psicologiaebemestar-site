@@ -455,6 +455,18 @@ footer .legal{border-top:1px solid rgba(255,255,255,.15);padding-block:20px calc
 a.filter-link{display:inline-flex;align-items:center;gap:6px;border:1px dashed var(--clay);color:var(--clay);border-radius:999px;padding:8px 16px;font-size:14px;font-weight:600;text-decoration:none}
 a.filter-link:hover{background:var(--white)}
 @media (max-width:760px){.pubs-head{grid-template-columns:1fr}.pub{grid-template-columns:1fr;gap:6px}.pub-year{font-size:20px}}
+
+/* avaliações google */
+.reviews{padding-top:clamp(28px,4vw,48px);padding-bottom:clamp(28px,4vw,48px)}
+.rev-box{background:var(--white);border:1px solid var(--line);border-radius:26px;padding:clamp(24px,3.5vw,40px);display:grid;grid-template-columns:auto minmax(0,1fr) auto;gap:20px 36px;align-items:center}
+.rev-stars{display:flex;gap:4px;color:#E2A33B}
+.rev-stars svg{width:28px;height:28px}
+.rev-txt{display:flex;flex-direction:column;gap:8px}
+.rev-txt h2{margin:0;font-size:clamp(26px,3vw,36px)}
+.rev-txt p{margin:0;max-width:58ch}
+.rev-cta{display:flex;flex-direction:column;gap:10px}
+.rev-cta .btn{text-align:center;justify-content:center}
+@media (max-width:900px){.rev-box{grid-template-columns:1fr}.rev-cta{flex-direction:row;flex-wrap:wrap}}
 </style>
 </head>
 <body>
