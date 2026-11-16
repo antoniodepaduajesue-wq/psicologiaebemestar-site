@@ -9,11 +9,11 @@
 <meta property="og:locale" content="pt_PT">
 <meta property="og:site_name" content="Centro de Psicologia e Bem-Estar">
 <meta property="og:title" content="Psicologia, Fisioterapia, Pilates e Yoga na Covilhã · Especialidades">
-<meta property="og:description" content="Psicologia clínica e da saúde, psicologia da educação, avaliação psicológica e neuropsicológica, Academia Einstein, fisioterapia, pilates, yoga, reiki, coaching e supervisão clínica na Covilhã.">
+<meta property="og:description" content="Psicologia clínica e da saúde, psicologia da educação, avaliação psicológica e neuropsicológica, avaliação psicológica de condutores (exame psicotécnico), Academia Einstein, fisioterapia, pilates, yoga, reiki, coaching e supervisão clínica na Covilhã.">
 <meta property="og:url" content="https://www.psicologiaebemestar.pt/especialidades.html">
 <meta property="og:image" content="https://www.psicologiaebemestar.pt/img/espaco-rececao.jpg">
 <meta name="claude:viewport-fit-sides" content="cover">
-<meta name="description" content="Psicologia clínica e da saúde, psicologia da educação, avaliação psicológica e neuropsicológica, Academia Einstein, fisioterapia, pilates, yoga, reiki, coaching e supervisão clínica na Covilhã.">
+<meta name="description" content="Psicologia clínica e da saúde, psicologia da educação, avaliação psicológica e neuropsicológica, avaliação psicológica de condutores (exame psicotécnico), Academia Einstein, fisioterapia, pilates, yoga, reiki, coaching e supervisão clínica na Covilhã.">
 <link rel="preconnect" href="https://fonts.googleapis.com">
 <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
 <link rel="stylesheet" href="https://fonts.googleapis.com/css2?family=Albert+Sans:wght@400;500;600;700&family=Cormorant+Garamond:ital,wght@0,600;1,500&display=swap">
@@ -466,6 +466,29 @@ a.filter-link:hover{background:var(--white)}
 .rev-cta{display:flex;flex-direction:column;gap:10px}
 .rev-cta .btn{text-align:center;justify-content:center}
 @media (max-width:900px){.rev-box{grid-template-columns:1fr}.rev-cta{flex-direction:row;flex-wrap:wrap}}
+
+/* avaliação psicológica de condutores */
+.cond{padding-top:0}
+.cond-box{background:var(--white);border:1px solid var(--line);border-radius:28px;padding:clamp(24px,3.6vw,44px);display:grid;grid-template-columns:minmax(0,1.8fr) minmax(0,.8fr);gap:clamp(24px,3.5vw,44px);align-items:start}
+.cond-main{display:flex;flex-direction:column;gap:12px}
+.cond-main h2{margin:0}
+.cond-main > p{margin:0;max-width:72ch;line-height:1.65}
+.cond-ic{width:48px;height:48px;border-radius:14px;background:var(--mist);color:var(--sage);display:grid;place-items:center}
+.cond-ic svg{width:28px;height:28px}
+.cond-cols{display:grid;grid-template-columns:minmax(0,1.3fr) minmax(0,1fr);gap:18px;margin-top:8px}
+.cond-cols > div{background:var(--tint);border-radius:18px;padding:18px 20px}
+.cond-cols h3{margin:0 0 10px;font-size:18px;color:var(--sage);display:flex;align-items:center;gap:8px;flex-wrap:wrap}
+.cond-cols ul{margin:0;padding-left:18px;display:flex;flex-direction:column;gap:6px;font-size:15px;line-height:1.45;color:var(--ink)}
+.cond-cols p{margin:0;font-size:15px;line-height:1.55;color:var(--ink)}
+.pill{font-size:11.5px;font-weight:700;letter-spacing:.04em;text-transform:uppercase;background:var(--clay);color:#fff;border-radius:999px;padding:3px 9px}
+.pill-soft{background:var(--mist);color:var(--sage)}
+.cond-card{background:var(--sage);color:#fff;border-radius:22px;padding:24px;display:flex;flex-direction:column;gap:8px;position:sticky;top:110px}
+.cond-card .kicker{color:#E9B89F}
+.cond-card h3{margin:0;font-family:var(--serif);font-size:26px;font-weight:600;color:#fff}
+.cond-card .role{font-size:14px;color:rgba(255,255,255,.82);margin-bottom:8px}
+.cond-card .btn{background:#fff;color:var(--sage);border-color:#fff;justify-content:center;text-align:center}
+.cond-tel{color:#fff;font-weight:600;font-size:14.5px;text-align:center;margin-top:4px}
+@media (max-width:900px){.cond-box{grid-template-columns:1fr}.cond-cols{grid-template-columns:1fr}.cond-card{position:static}}
 </style>
 </head>
 <body>
@@ -579,6 +602,30 @@ a.filter-link:hover{background:var(--white)}
     </div>
   </section>
 
+  <section class="block cond" id="condutores">
+    <div class="wrap">
+      <div class="cond-box">
+        <div class="cond-main">
+          <span class="cond-ic"><svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.6" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true"><path d="M3.5 15.5V12l2-5h13l2 5v3.5"/><path d="M3 15.5h18v2.5h-2.5M5.5 18H3v-2.5"/><circle cx="7.5" cy="16.5" r="1.6"/><circle cx="16.5" cy="16.5" r="1.6"/><path d="M5.5 12h13"/></svg></span>
+          <span class="kicker">Exame psicotécnico</span>
+          <h2>Avaliação Psicológica de Condutores</h2>
+          <p class="muted">Avaliação psicológica para obtenção, revalidação e <b>mudança de categoria da carta de condução</b>, com emissão do certificado de avaliação psicológica. Esta avaliação está prevista no Regulamento da Habilitação Legal para Conduzir (RHLC), aprovado pelo Decreto-Lei n.º 138/2012 e alterado, entre outros, pelos Decretos-Lei n.º 40/2016 e n.º 151/2017, sob a supervisão do IMT – Instituto da Mobilidade e dos Transportes.</p>
+          <div class="cond-cols">
+            <div><h3>Grupo 2 <span class="pill">obrigatória</span></h3><ul><li>Condutores de veículos pesados (categorias C, CE, D e DE)</li><li>Motoristas de táxi, TVDE e autocarros</li><li>Condutores de veículos prioritários: ambulâncias, bombeiros e transporte de doentes</li><li>Transporte coletivo de crianças (TCC)</li><li>Transporte de mercadorias perigosas (ADR)</li><li>Instrutores e examinadores de condução</li><li>Revalidação de cartas do Grupo 2 a partir dos 50 anos</li></ul></div>
+            <div><h3>Grupo 1 <span class="pill pill-soft">só com recomendação</span></h3><p>Condutores de ligeiros (categoria B) ou motociclos (categoria A), apenas quando a avaliação é recomendada pelo médico no exame clínico ou exigida pelo IMT.</p></div>
+          </div>
+        </div>
+        <aside class="cond-card">
+          <span class="kicker">Marcação</span>
+          <h3>Dr.ª Carolina Teixeira</h3>
+          <span class="role">Psicóloga · Avaliação psicológica de condutores</span>
+          <a class="btn btn-fill" href="https://wa.me/351928028460?text=Ol%C3%A1%21%20Gostaria%20de%20marcar%20uma%20avalia%C3%A7%C3%A3o%20psicol%C3%B3gica%20de%20condutores." target="_blank" rel="noopener">WhatsApp · 928 028 460</a>
+          <a class="cond-tel" href="tel:+351928028460">Ligar +351 928 028 460</a>
+        </aside>
+      </div>
+    </div>
+  </section>
+
   <section class="block sup" id="supervisao">
     <div class="wrap">
       <div class="sup-box">
@@ -620,6 +667,7 @@ a.filter-link:hover{background:var(--white)}
         <li><a href="especialidades.html">Academia Einstein</a></li>
         <li><a href="especialidades.html">Fisioterapia e Pilates</a></li>
         <li><a href="especialidades.html">Yoga e Reiki</a></li>
+        <li><a href="especialidades.html#condutores">Avaliação de Condutores</a></li>
         <li><a href="especialidades.html#supervisao">Supervisão Clínica</a></li>
       </ul></div>
       <div><h4>Informação</h4><ul>

@@ -12,7 +12,7 @@
 <meta property="og:description" content="Rua Conde da Covilhã, Lote D, R/Ch, 6200-084 Covilhã. Segunda a sábado, das 08h às 22h, sempre com marcação prévia.">
 <meta property="og:url" content="https://www.psicologiaebemestar.pt/localizacao.html">
 <meta property="og:image" content="https://www.psicologiaebemestar.pt/img/espaco-rececao.jpg">
-<script type="application/ld+json">{"@context": "https://schema.org", "@type": ["MedicalClinic", "LocalBusiness"], "name": "Centro de Psicologia e Bem-Estar", "url": "https://www.psicologiaebemestar.pt/", "image": "https://www.psicologiaebemestar.pt/img/espaco-rececao.jpg", "telephone": "+351912790023", "address": {"@type": "PostalAddress", "streetAddress": "Rua Conde da Covilhã, Lote D, R/Ch", "postalCode": "6200-084", "addressLocality": "Covilhã", "addressRegion": "Castelo Branco", "addressCountry": "PT"}, "geo": {"@type": "GeoCoordinates", "latitude": 40.2834722, "longitude": -7.5033432}, "openingHoursSpecification": [{"@type": "OpeningHoursSpecification", "dayOfWeek": ["Monday", "Tuesday", "Wednesday", "Thursday", "Friday", "Saturday"], "opens": "08:00", "closes": "22:00"}], "areaServed": ["Covilhã", "Fundão", "Belmonte", "Penamacor", "Castelo Branco", "Guarda"], "availableService": [{"@type": "MedicalTherapy", "name": "Psicologia Clínica e da Saúde"}, {"@type": "MedicalTherapy", "name": "Psicologia da Educação"}, {"@type": "MedicalTherapy", "name": "Avaliação Psicológica e Neuropsicológica"}, {"@type": "MedicalTherapy", "name": "Supervisão Clínica"}, {"@type": "MedicalTherapy", "name": "Fisioterapia"}, {"@type": "MedicalTherapy", "name": "Pilates Clínico"}, {"@type": "MedicalTherapy", "name": "Yoga e Reiki"}, {"@type": "MedicalTherapy", "name": "Coaching"}], "hasMap": "https://www.google.com/maps/search/?api=1&query=Rua%20Conde%20da%20Covilh%C3%A3%2C%20Lote%20D%2C%206200-084%20Covilh%C3%A3"}</script>
+<script type="application/ld+json">{"@context": "https://schema.org", "@type": ["MedicalClinic", "LocalBusiness"], "name": "Centro de Psicologia e Bem-Estar", "url": "https://www.psicologiaebemestar.pt/", "image": "https://www.psicologiaebemestar.pt/img/espaco-rececao.jpg", "telephone": "+351912790023", "address": {"@type": "PostalAddress", "streetAddress": "Rua Conde da Covilhã, Lote D, R/Ch", "postalCode": "6200-084", "addressLocality": "Covilhã", "addressRegion": "Castelo Branco", "addressCountry": "PT"}, "geo": {"@type": "GeoCoordinates", "latitude": 40.2834722, "longitude": -7.5033432}, "openingHoursSpecification": [{"@type": "OpeningHoursSpecification", "dayOfWeek": ["Monday", "Tuesday", "Wednesday", "Thursday", "Friday", "Saturday"], "opens": "08:00", "closes": "22:00"}], "areaServed": ["Covilhã", "Fundão", "Belmonte", "Penamacor", "Castelo Branco", "Guarda"], "availableService": [{"@type": "MedicalTherapy", "name": "Psicologia Clínica e da Saúde"}, {"@type": "MedicalTherapy", "name": "Psicologia da Educação"}, {"@type": "MedicalTherapy", "name": "Avaliação Psicológica e Neuropsicológica"}, {"@type": "MedicalTherapy", "name": "Avaliação Psicológica de Condutores"}, {"@type": "MedicalTherapy", "name": "Supervisão Clínica"}, {"@type": "MedicalTherapy", "name": "Fisioterapia"}, {"@type": "MedicalTherapy", "name": "Pilates Clínico"}, {"@type": "MedicalTherapy", "name": "Yoga e Reiki"}, {"@type": "MedicalTherapy", "name": "Coaching"}], "hasMap": "https://www.google.com/maps/search/?api=1&query=Rua%20Conde%20da%20Covilh%C3%A3%2C%20Lote%20D%2C%206200-084%20Covilh%C3%A3"}</script>
 <meta name="claude:viewport-fit-sides" content="cover">
 <meta name="description" content="Rua Conde da Covilhã, Lote D, R/Ch, 6200-084 Covilhã. Segunda a sábado, das 08h às 22h, sempre com marcação prévia.">
 <link rel="preconnect" href="https://fonts.googleapis.com">
@@ -467,6 +467,29 @@ a.filter-link:hover{background:var(--white)}
 .rev-cta{display:flex;flex-direction:column;gap:10px}
 .rev-cta .btn{text-align:center;justify-content:center}
 @media (max-width:900px){.rev-box{grid-template-columns:1fr}.rev-cta{flex-direction:row;flex-wrap:wrap}}
+
+/* avaliação psicológica de condutores */
+.cond{padding-top:0}
+.cond-box{background:var(--white);border:1px solid var(--line);border-radius:28px;padding:clamp(24px,3.6vw,44px);display:grid;grid-template-columns:minmax(0,1.8fr) minmax(0,.8fr);gap:clamp(24px,3.5vw,44px);align-items:start}
+.cond-main{display:flex;flex-direction:column;gap:12px}
+.cond-main h2{margin:0}
+.cond-main > p{margin:0;max-width:72ch;line-height:1.65}
+.cond-ic{width:48px;height:48px;border-radius:14px;background:var(--mist);color:var(--sage);display:grid;place-items:center}
+.cond-ic svg{width:28px;height:28px}
+.cond-cols{display:grid;grid-template-columns:minmax(0,1.3fr) minmax(0,1fr);gap:18px;margin-top:8px}
+.cond-cols > div{background:var(--tint);border-radius:18px;padding:18px 20px}
+.cond-cols h3{margin:0 0 10px;font-size:18px;color:var(--sage);display:flex;align-items:center;gap:8px;flex-wrap:wrap}
+.cond-cols ul{margin:0;padding-left:18px;display:flex;flex-direction:column;gap:6px;font-size:15px;line-height:1.45;color:var(--ink)}
+.cond-cols p{margin:0;font-size:15px;line-height:1.55;color:var(--ink)}
+.pill{font-size:11.5px;font-weight:700;letter-spacing:.04em;text-transform:uppercase;background:var(--clay);color:#fff;border-radius:999px;padding:3px 9px}
+.pill-soft{background:var(--mist);color:var(--sage)}
+.cond-card{background:var(--sage);color:#fff;border-radius:22px;padding:24px;display:flex;flex-direction:column;gap:8px;position:sticky;top:110px}
+.cond-card .kicker{color:#E9B89F}
+.cond-card h3{margin:0;font-family:var(--serif);font-size:26px;font-weight:600;color:#fff}
+.cond-card .role{font-size:14px;color:rgba(255,255,255,.82);margin-bottom:8px}
+.cond-card .btn{background:#fff;color:var(--sage);border-color:#fff;justify-content:center;text-align:center}
+.cond-tel{color:#fff;font-weight:600;font-size:14.5px;text-align:center;margin-top:4px}
+@media (max-width:900px){.cond-box{grid-template-columns:1fr}.cond-cols{grid-template-columns:1fr}.cond-card{position:static}}
 </style>
 </head>
 <body>
@@ -583,6 +606,7 @@ a.filter-link:hover{background:var(--white)}
         <li><a href="especialidades.html">Academia Einstein</a></li>
         <li><a href="especialidades.html">Fisioterapia e Pilates</a></li>
         <li><a href="especialidades.html">Yoga e Reiki</a></li>
+        <li><a href="especialidades.html#condutores">Avaliação de Condutores</a></li>
         <li><a href="especialidades.html#supervisao">Supervisão Clínica</a></li>
       </ul></div>
       <div><h4>Informação</h4><ul>
